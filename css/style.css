@@ -1,0 +1,146 @@
+/* &display=swap */
+@import "null.css";
+/* ================================================================ */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+/* ================================================================ */
+
+body {
+	background: rgba(204, 127, 40, 0.795);
+}
+.container {
+	width: 1025px;
+	margin: 0px auto;
+}
+
+.header {
+	margin-top: 50px;
+	min-height: 200px;
+	background: rgba(218, 44, 44, 0.795);
+}
+.pseudo {
+	padding: 30px;
+}
+.text-pseudo {
+	font-size: 30px;
+	color: #fff;
+}
+.text-pseudo::first-line {
+	color: rgba(48, 204, 131, 0.667);
+}
+.text-pseudo::first-letter {
+	color: rgba(214, 181, 70, 0.667);
+}
+
+.text-pseudo::before {
+	content: "«";
+	color: rgba(214, 181, 70, 0.667);
+}
+
+.text-pseudo::after {
+	content: "»";
+	color: rgba(214, 181, 70, 0.667);
+}
+.main {
+	min-height: 300px;
+	background: rgba(171, 216, 47, 0.795);
+}
+
+.example {
+	padding: 30px;
+}
+.example-link {
+	background-color: rgba(245, 212, 212, 0.856);
+	display: inline-block;
+	padding: 15px 50px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	color: rgb(245, 81, 16);
+	font-size: 40px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	letter-spacing: 2px;
+	box-shadow: 0 5px 0 0 #000;
+}
+
+.example-link:hover {
+	margin: 1px 0px 0px 0px;
+	box-shadow: 0 4px 0 0 #000;
+}
+.example-link:active {
+	margin: 4px 0px 0px 0px;
+	box-shadow: inset 0 0 5px 0 #000;
+}
+
+.example-text {
+	display: none;
+	padding: 30px;
+	background: #50f080c0;
+}
+
+.example-text:target {
+	display: block;
+}
+
+.example-text:hover {
+}
+.block {
+	padding: 20px;
+}
+.block p {
+	padding: 15px;
+	margin: 0px 0px 20px 0px;
+	background-color: rgb(212, 136, 136);
+	margin: 0px 0px 20px 0px;
+}
+.block p:last-child {
+	margin-bottom: 0;
+}
+
+/* .block p:not(:last-child){
+	margin: 0px 0px 20px 0px;
+} */
+
+.block p:first-child {
+	background-color: rgb(235, 199, 43);
+}
+
+.block p:last-of-type {
+	background-color: rgb(77, 164, 235);
+}
+.block p:nth-child(2) {
+	background-color: rgb(111, 134, 58);
+}
+
+.block-even p:nth-child(even) {
+	background-color: rgb(18, 17, 112);
+	color: #fff;
+}
+
+.block-odd p:nth-child(odd) {
+	background-color: rgb(226, 212, 88);
+	color: #fff;
+}
+
+.footer {
+	min-height: 200px;
+	background: rgba(44, 218, 209, 0.795);
+	margin-bottom: 50px;
+	padding: 30px;
+}
+.footer-list {
+}
+.footer-list li {
+	padding: 0px 0px 10px 30px;
+}
+
+.footer-list li::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin: 0px 10px 0px -30px;
+	background: url("../img/list.svg") 0 0 / 20px no-repeat;
+	position: absolute;
+}
